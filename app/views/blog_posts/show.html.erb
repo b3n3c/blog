@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+<div class="card m-3 p-3">
+  <div class="card-body">
+    <%= render partial: "blog_post_extended", locals: { blog_post: @blog_post } %>
+    <br>
+  <%= link_to "Edit this blog post", edit_blog_post_path(@blog_post), class: "card-link" %>
+  <%= link_to "Back to blog posts", blog_posts_path, class: "card-link" %>
+  <br><br>
+  <%= button_to "Delete post", @blog_post, method: :delete, class: "btn btn-primary" %>
+  </div>
+</div>

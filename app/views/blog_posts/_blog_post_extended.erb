@@ -1,0 +1,7 @@
+<div id="<%= dom_id blog_post %>">
+  <h5 class="card-title"><%= blog_post.title %></h5>
+  <h6 class="card-subtitle mb-2 text-muted">Created at: <%= blog_post.created_at.strftime("%Y-%m-%d %H:%M") %></h6>
+  <h6 class="card-subtitle mb-2 text-muted">Updated at: <%= blog_post.updated_at.strftime("%Y-%m-%d %H:%M") %></h6>
+  <br>
+  <p class="card-text"><%= blog_post.description %></p>
+</div>

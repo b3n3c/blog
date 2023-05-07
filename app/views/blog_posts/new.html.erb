@@ -1,0 +1,14 @@
+<div class="h-100 d-flex justify-content-center align-items-center">
+  <div>
+    <h1>New blog post</h1>
+
+    <%= render "form", blog_post: @blog_post %>
+
+    <br>
+
+    <div>
+      <%= link_to "Back to blog posts", blog_posts_path %>
+    </div>
+  </div>
+</div>
+
